@@ -1,0 +1,19 @@
+<!--/* Workaround for bug https://youtrack.jetbrains.com/issue/IDEA-132738 -->
+<!--@thymesVar id="users" type="String"-->
+<!--@thymesVar id="content" type="String"-->
+<!--*/-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>USERS</h2>
+<div th:each="user:${users}">
+    <p th:text="${user.name}"></p>
+    <p th:text="${user.email}"></p>
+    <p th:text="${user.timeStamp}"></p>
+</div>
+</body>
+</html>
