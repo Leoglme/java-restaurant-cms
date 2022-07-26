@@ -1,27 +1,31 @@
 package com.javarestaurantcms.controllers;
 
+import com.javarestaurantcms.data.UserDAO;
 import com.javarestaurantcms.models.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class UserController {
-    private final List<User> userList = new ArrayList<>();
+    @Autowired
+    private UserDAO userDAO;
+
+    @PostMapping("/users")
+    public String createUser(@ModelAttribute User newUser) {
+        User user = new User(newUser.getName(), newUser.getEmail());
+        userDAO.save(user);
+        return "redirect:users";
+    }
 
     @GetMapping("/users")
-    public String showGreeting(Model model) {
-        User user1 = new User("tpto", "rri@eeec.com");
-        User user2 = new User("machin", "machin@eeec.com");
-        userList.add(user1);
-        userList.add(user2);
-
-        model.addAttribute("users", userList);
+    public String showUser(Model model) {
+        model.addAttribute("users", userDAO.findAll());
+        model.addAttribute("newUser", new User());
 
         return "users";
     }
-
 }

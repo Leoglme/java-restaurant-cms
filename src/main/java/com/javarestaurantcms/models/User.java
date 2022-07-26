@@ -1,10 +1,12 @@
 package com.javarestaurantcms.models;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,6 +23,7 @@ public class User {
         this.name = name;
         this.email = email;
     }
+    public User(){}
 
     public LocalDateTime getTimeStamp() {
         return timeStamp;
