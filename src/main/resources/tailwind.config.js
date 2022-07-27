@@ -50,9 +50,8 @@ module.exports = {
         },
         colors: {
             ...colors,
-            'primary': {
-              500: '#E49031'
-            },
+            black: '#0E0C0F',
+            'primary': '#E49031',
             'grey': {
                 100: '#101623',
                 200: '#101623',
