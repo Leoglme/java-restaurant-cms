@@ -32,7 +32,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; /* 4 */
+  font-family: Raleway, Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; /* 4 */
 }
 
 /*
@@ -570,6 +570,8 @@ video {
   margin-left: auto;
 } .mt-3 {
   margin-top: 0.75rem;
+} .mb-6 {
+  margin-bottom: 1.5rem;
 } .block {
   display: block;
 } .inline-block {
@@ -646,6 +648,8 @@ video {
   justify-content: center;
 } .justify-between {
   justify-content: space-between;
+} .gap-4 {
+  gap: 1rem;
 } .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -668,6 +672,8 @@ video {
   border-width: 1px;
 } .border-t {
   border-top-width: 1px;
+} .border-b {
+  border-bottom-width: 1px;
 } .border-dashed {
   border-style: dashed;
 } .border-gray-200 {
@@ -676,6 +682,9 @@ video {
 } .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
+} .border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 } .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -698,10 +707,10 @@ video {
   --tw-bg-opacity: 0.75;
 } .p-4 {
   padding: 1rem;
-} .p-1 {
-  padding: 0.25rem;
 } .p-2 {
   padding: 0.5rem;
+} .p-1 {
+  padding: 0.25rem;
 } .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -737,6 +746,8 @@ video {
   padding-bottom: 0.75rem;
 } .pt-4 {
   padding-top: 1rem;
+} .font-body {
+  font-family: Lumios-Maker, Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 } .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -749,6 +760,15 @@ video {
 } .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+} .text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+} .text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+} .text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 } .font-medium {
   font-weight: 500;
 } .font-semibold {
@@ -893,14 +913,6 @@ video {
     padding-left: 16rem;
   }
 } @media (min-width: 1024px) {
-
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
 
   .lg\:px-8 {
     padding-left: 2rem;

@@ -14,6 +14,7 @@ module.exports = {
     theme: {
         fontFamily: {
             'body': [
+                'Lumios-Maker',
                 'Inter',
                 'ui-sans-serif',
                 'system-ui',
@@ -31,6 +32,7 @@ module.exports = {
                 'Noto Color Emoji'
             ],
             'sans': [
+                'Raleway',
                 'Inter',
                 'ui-sans-serif',
                 'system-ui',
