@@ -67,6 +67,9 @@ module.exports = {
             },
         },
         extend: {
+            borderWidth: {
+                '6': '6px'
+            },
             spacing: {
                 "1.5": "1.125rem"
             },

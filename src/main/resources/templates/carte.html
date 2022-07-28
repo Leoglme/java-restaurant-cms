@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../static/css/style.build.tailwind.css">
     <link rel="stylesheet" href="../static/css/index.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        img::before {
+            content: '';
+        }
+    </style>
 </head>
 <body class="bg-black text-white">
 <nav x-data="{ open: false }" class="bg-linear sticky top-0 z-10">
@@ -111,33 +117,289 @@ Heroicon name: outline/x" x-state:on="Menu open" x-state:off="Menu closed" class
     </div>
 </nav>
 <main>
-    <section class="object-cover relative w-full flex justify-center items-center gap-8" style="top: -64px" id="cta">
-        <span class="backdrop"></span>
-        <img class="object-cover cta-image w-full" src="../static/images/dessert.png"
-             alt="Menu call to action background">
-        <div class="absolute flex items-center justify-center bg-black-60 flex-col px-32 py-16">
-            <h1 class="font-body text-8xl">Десерты</h1>
-        </div>
+    <section id="dish">
+        <section class="object-cover relative w-full flex justify-center items-center gap-8" style="top: -64px"
+                 id="cta-dish">
+            <span class="backdrop"></span>
+            <img class="object-cover cta-image w-full" src="../static/images/dish.jpg"
+                 alt="Menu call to action background">
+            <div class="border-6 border-white absolute flex items-center justify-center bg-black-60 flex-col px-32 py-16">
+                <h1 class="relative font-body text-8xl" style="top: -16px">Plats</h1>
+            </div>
+        </section>
+        <section
+                class="container max-w-7xl mb-8 px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center"
+                id="dish-recipes">
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 25.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 26.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 27.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 28.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 29.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 30.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 31.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 32.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+        </section>
     </section>
-    <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="receipes">
-        <article class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-            1
-        </article>
-        <article class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-            2
-        </article>
-        <article class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-            3
-        </article>
-        <article class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-            4
-        </article>
-        <article class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-            5
-        </article>
-        <article class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-            6
-        </article>
+
+    <section id="starter">
+        <section class="object-cover relative w-full flex justify-center items-center gap-8 my-20" id="cta-starter">
+            <span class="backdrop"></span>
+            <img class="object-cover cta-image w-full" src="../static/images/starter.jpg"
+                 alt="Menu call to action background">
+            <div class="border-6 border-white absolute flex items-center justify-center bg-black-60 flex-col px-32 py-16">
+                <h1 class="relative font-body text-8xl" style="top: -16px">Entrées</h1>
+            </div>
+        </section>
+        <section
+                class="container max-w-7xl mb-8 px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center"
+                id="starter-recipes">
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 25.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 26.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 27.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 28.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 29.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 30.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 31.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 32.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+        </section>
+    </section>
+    <section id="dessert">
+        <section class="object-cover relative w-full flex justify-center items-center gap-8 my-20" id="cta-dessert">
+            <span class="backdrop"></span>
+            <img class="object-cover cta-image w-full" src="../static/images/dessert.png"
+                 alt="Menu call to action background">
+            <div class="border-6 border-white absolute flex items-center justify-center bg-black-60 flex-col px-32 py-16">
+                <h1 class="relative font-body text-8xl" style="top: -16px">Desserts</h1>
+            </div>
+        </section>
+        <section
+                class="container max-w-7xl mb-8 px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center"
+                id="dessert-recipes">
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 25.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 26.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 27.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 28.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 29.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 30.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 31.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+            <article class="max-w-xs w-full flex-col border-4 flex justify-center border-white">
+                <div class="relative">
+                    <span class="backdrop"></span>
+                    <img class="w-full" src="../static/images/image 32.png" alt="plat name">
+                </div>
+                <div class="flex-col flex my-6">
+                    <h4 class="text-lg text-center">Мороженое Oreo</h4>
+                    <h6 class="font-body text-4xl text-center">369.90</h6>
+                </div>
+            </article>
+        </section>
     </section>
 </main>
 </body>
