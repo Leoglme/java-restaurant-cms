@@ -55,4 +55,20 @@
 .bg-linear {
   background: linear-gradient(180deg, #000000 -26.87%, rgba(0, 0, 0, 0) 119%); }
 
+nav {
+  position: relative;
+  z-index: 10; }
+
+.cta-image {
+  max-height: 50vh; }
+
+.bg-black-60 {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1); }
+
 /*# sourceMappingURL=index.css.map */
