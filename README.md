@@ -4,6 +4,8 @@ The following was discovered as part of building this project:
 * The original package name 'com.example.java-restaurant-cms' is invalid and this project uses 'com.example.javarestaurantcms' instead.
 
 # Getting Started
+* install dependencies in pom.xml
+* start with command: ``mvnw spring-boot:run``
 
 ### Reference Documentation
 For further reference, please consider the following sections:

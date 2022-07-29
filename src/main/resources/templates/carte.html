@@ -7,25 +7,49 @@
     <link rel="stylesheet" href="../static/css/style.build.tailwind.css">
     <link rel="stylesheet" href="../static/css/index.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    <script defer src="../static/js/index.js"></script>
     <style>
-        img::before {
+        :root {
+            --primary: #E49031;
+        }
+
+        .bgc-primary {
+            background-color: var(--primary);
+        }
+
+        .color-primary, .hover-color-primary:hover {
+            color: var(--primary);
+        }
+
+        .underline-primary {
+            position: relative;
+        }
+
+        .underline-primary::after {
             content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+            transition: transform 0.3s;
         }
     </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white" x-data="scroll()"
+      x-init="reactOnScroll()"
+      @scroll.window="reactOnScroll()">
+<div th:replace="header :: header">
+</div>
 <nav x-data="{ open: false }" class="bg-linear sticky top-0 z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
             <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4">
-                    <a href="#"
-                       class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                    <a href="#"
-                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-                    <a href="#"
-                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                <div class="flex items-center space-x-4 gap-8">
+                    <a href="#" class="font-medium hover-color-primary">Заказать</a>
+                    <a href="#" class="font-medium color-primary underline-primary">Заказать</a>
+                    <a href="#" class="font-medium hover-color-primary">Заказать</a>
                 </div>
             </div>
             <div class="flex-shrink-0">
@@ -33,13 +57,11 @@
                      src="../static/images/logo.png" alt="restaurant_name">
             </div>
             <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4">
+                <div class="flex items-center space-x-4 gap-8">
+                    <a href="#" class="font-medium hover-color-primary">Заказать</a>
+                    <a href="#" class="font-medium hover-color-primary">Заказать</a>
                     <a href="#"
-                       class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                    <a href="#"
-                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-                    <a href="#"
-                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                       class="bgc-primary flex items-center justify-center text-grey-600 px-4 py-2 font-medium">Заказать</a>
                 </div>
             </div>
 
@@ -401,6 +423,8 @@ Heroicon name: outline/x" x-state:on="Menu open" x-state:off="Menu closed" class
             </article>
         </section>
     </section>
+    <div th:fragment="footer">
+    </div>
 </main>
 </body>
 </html>

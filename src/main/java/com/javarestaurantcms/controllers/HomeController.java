@@ -9,6 +9,6 @@ public class HomeController {
 
     @GetMapping
     public String showHome(Model model) {
-        return "home";
+        return "carte";
     }
 }

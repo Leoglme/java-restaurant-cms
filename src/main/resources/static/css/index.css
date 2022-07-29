@@ -71,4 +71,10 @@ nav {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.1); }
 
+button:active, a:active {
+  filter: brightness(120%); }
+
+*, :focus-visible {
+  outline: none; }
+
 /*# sourceMappingURL=index.css.map */
