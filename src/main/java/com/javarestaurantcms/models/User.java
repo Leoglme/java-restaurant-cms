@@ -16,21 +16,21 @@ public class User {
 
     private String email;
 
-    private LocalDateTime timeStamp;
+    private LocalDateTime created_at;
 
     public User(String name, String email) {
-        this.timeStamp = LocalDateTime.now();
+        this.created_at = LocalDateTime.now();
         this.name = name;
         this.email = email;
     }
     public User(){}
 
-    public LocalDateTime getTimeStamp() {
-        return timeStamp;
+    public LocalDateTime getCreatedAt() {
+        return created_at;
     }
 
-    public void setTimeStamp(LocalDateTime timeStamp) {
-        this.timeStamp = timeStamp;
+    public void setCreatedAt(LocalDateTime created_at) {
+        this.created_at = created_at;
     }
 
     public Integer getId() {

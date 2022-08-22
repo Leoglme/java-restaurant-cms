@@ -1,54 +1,54 @@
 @font-face {
   font-family: 'Raleway';
-  src: url("../../static/fonts/raleway/raleway-v28-latin-300.woff2");
+  src: url("../fonts/raleway/raleway-v28-latin-300.woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Raleway';
-  src: url("../../static/fonts/raleway/raleway-v28-latin-regular.woff2");
+  src: url("../fonts/raleway/raleway-v28-latin-regular.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Raleway';
-  src: url("../../static/fonts/raleway/raleway-v28-latin-500.woff2");
+  src: url("../fonts/raleway/raleway-v28-latin-500.woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Raleway';
-  src: url("../../static/fonts/raleway/raleway-v28-latin-600.woff2");
+  src: url("../fonts/raleway/raleway-v28-latin-600.woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Raleway';
-  src: url("../../static/fonts/raleway/raleway-v28-latin-800.woff2");
+  src: url("../fonts/raleway/raleway-v28-latin-800.woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lumios-Maker';
-  src: url("../../static/fonts/lumios-marker/lumios-marker.woff2");
+  src: url("../fonts/lumios-marker/lumios-marker.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lumios-Maker';
-  src: url("../../static/fonts/lumios-marker/lumios-marker.woff2");
+  src: url("../fonts/lumios-marker/lumios-marker.woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lumios-Maker';
-  src: url("../../static/fonts/lumios-marker/lumios-marker.woff2");
+  src: url("../fonts/lumios-marker/lumios-marker.woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lumios-Maker';
-  src: url("../../static/fonts/lumios-marker/lumios-marker.woff2");
+  src: url("../fonts/lumios-marker/lumios-marker.woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }

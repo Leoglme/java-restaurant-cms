@@ -21,11 +21,11 @@ public class UserController {
         return "redirect:users";
     }
 
-    @GetMapping("/users")
+    @GetMapping
     public String showUser(Model model) {
         model.addAttribute("users", userDAO.findAll());
         model.addAttribute("newUser", new User());
 
-        return "users";
+        return "example";
     }
 }
